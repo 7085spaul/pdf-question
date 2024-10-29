@@ -12,6 +12,10 @@ before_script:
     - npm run lint
     - npm test
 
+test:node4:
+  image: node:4
+  <<: *npm_test
+
 test:node6:
   image: node:6
   <<: *npm_test
